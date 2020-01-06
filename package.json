@@ -1,0 +1,15 @@
+{
+  "name": "concurrently-bug",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "concurrently yarn:start-*",
+    "start-foo": "node echo.js foo",
+    "start-bar": "node echo.js bar"
+  },
+  "dependencies": {
+    "concurrently": "^5.0.2",
+    "delay": "^4.3.0"
+  }
+}
